@@ -10,7 +10,6 @@ import qreol.project.crm.repository.ClientRepository;
 import qreol.project.crm.repository.ContactRepository;
 import qreol.project.crm.service.ClientService;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Service

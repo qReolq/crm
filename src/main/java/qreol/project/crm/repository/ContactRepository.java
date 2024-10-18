@@ -1,7 +1,6 @@
 package qreol.project.crm.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import qreol.project.crm.model.Contact;
 import qreol.project.crm.model.ContactType;

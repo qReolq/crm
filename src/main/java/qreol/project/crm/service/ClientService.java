@@ -2,7 +2,6 @@ package qreol.project.crm.service;
 
 import qreol.project.crm.model.Client;
 import qreol.project.crm.model.Contact;
-import qreol.project.crm.model.ContactType;
 
 import java.util.List;
 

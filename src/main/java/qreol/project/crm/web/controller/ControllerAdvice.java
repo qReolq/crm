@@ -4,8 +4,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import qreol.project.crm.web.dto.exception.ExceptionBody;
 import qreol.project.crm.model.exception.ResourceNotFoundException;
+import qreol.project.crm.web.dto.exception.ExceptionBody;
 
 import java.time.LocalDateTime;
 
