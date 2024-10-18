@@ -10,3 +10,6 @@ spring:
   liquibase:
     change-log: classpath:liquibase/db.changelog.yml
     enabled: true
+
+springdoc:
+  override-with-generic-response: false
