@@ -8,14 +8,10 @@ services:
       POSTGRES_DB: ${POSTGRES_DATABASE}
       POSTGRES_USER: ${POSTGRES_USERNAME}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    env_file:
-      - .env
     ports:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - postgres_data_user:/var/lib/postgresql/data
-    networks:
-      - backend-network
 
 
 volumes:
