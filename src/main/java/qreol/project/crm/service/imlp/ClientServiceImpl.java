@@ -2,6 +2,7 @@ package qreol.project.crm.service.imlp;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import qreol.project.crm.model.Client;
 import qreol.project.crm.model.Contact;
 import qreol.project.crm.model.ContactType;
@@ -14,17 +15,20 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class ClientServiceImpl implements ClientService {
 
     private final ClientRepository clientRepository;
     private final ContactRepository contactRepository;
 
     @Override
+    @Transactional
     public Client addClient(Client client) {
         return clientRepository.save(client);
     }
 
     @Override
+    @Transactional
     public Contact addContactByClientId(Long clientId, Contact contact) {
         Client client = getClientById(clientId);
         contact.setClient(client);
